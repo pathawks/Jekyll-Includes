@@ -12,4 +12,4 @@
 	<a href='{{ site.root }}atom.xml' class='mobile'>Feed</a>
 {% endif %}
 
-{% endcapture %}{% capture homeURL %}{{site.root}}index.html{% endcapture %}{% if page.url != homeURL %}{% capture navbar %}{{ navbar | remove:' class="mobile"' }}{% endcapture %}{% endif %}{{ navbar | strip_newlines }}
+{% endcapture %}{% capture homeURL %}{{site.root}}index.html{% endcapture %}{% if page.url != homeURL %}{% capture navbar %}{{ navbar | remove:" class='mobile'" }}{% endcapture %}{% endif %}{{ navbar | strip_newlines }}
