@@ -13,4 +13,4 @@
 {% include mathjax.html %}
 {% include twitter.html %}
 
-{% endcapture %}{{ header | strip_newlines }}
+{% endcapture %}{{ header | strip_newlines | replace:'	',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'  ',' ' | replace:'> <','><' }}
